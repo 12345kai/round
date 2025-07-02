@@ -5,7 +5,7 @@ import joblib
 import matplotlib.pyplot as plt
 
 # Load trained model
-model = joblib.load("lgbm_model.pkl")
+model = joblib.load("stacking_model.pkl")
 
 
 st.title("Ticket Pricing & Revenue Prediction")
