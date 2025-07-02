@@ -54,16 +54,6 @@ if st.button("🚀 Predict Optimal Pricing range and Revenue"):
     optimal_prices = optimal_row["Ticket Price Combo"]
     optimal_revenue = optimal_row["Predicted Revenue"]
 
-    # Display histogram
-    st.subheader("📊 Revenue Prediction Histogram")
-    fig, ax = plt.subplots(figsize=(10, 5))
-    plt.bar([str(combo) for combo in df_revenue["Ticket Price Combo"]], df_revenue["Predicted Revenue"], color='skyblue')
-    plt.xlabel("(Min Price, Max Price)")
-    plt.ylabel("Predicted Revenue")
-    plt.title("Predicted Revenue Across Ticket Price Combinations")
-    plt.xticks(rotation=45, ha='right')
-    st.pyplot(fig)
-
     # Display optimal ticket pricing strategy
     st.subheader("🏆 Optimal Ticket Pricing")
     st.success(f"💰 Highest Predicted Revenue: **${optimal_revenue:,.2f}**")
