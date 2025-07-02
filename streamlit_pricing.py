@@ -43,7 +43,7 @@ if st.button("🚀 Predict Optimal Pricing range and Revenue"):
                 "sp_followers": sp_followers
             }])
             
-            predicted_revenue = model.predict(input_data)[0]
+            predicted_revenue = model.predict(input_data)
             revenue_data.append(((min_price, max_price), predicted_revenue))
 
     # Convert to DataFrame
