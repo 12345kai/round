@@ -1,6 +1,12 @@
-numpy
 pandas
-streamlit
-joblib
+numpy
 matplotlib
+seaborn
+category_encoders
+scikit-learn
+statsmodels
 lightgbm
+xgboost
+catboost
+optuna
+streamlit
